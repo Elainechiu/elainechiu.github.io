@@ -33,8 +33,21 @@
       margin: 4px 0;
       color: #555;
     }
+    .cv-button {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .cv-button:hover {
+      background-color: #005f99;
+    }
     main {
-      max-width: 800px;
+      max-width: 850px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -51,6 +64,22 @@
       padding-bottom: 4px;
       margin-bottom: 15px;
       color: #007acc;
+    }
+    h3 {
+      color: #007acc;
+      margin-bottom: 6px;
+      margin-top: 16px;
+    }
+    .paper-status {
+      color: #666;
+      font-size: 14px;
+      margin-top: -6px;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    ul {
+      margin-top: 0;
+      padding-left: 18px;
     }
     a {
       color: #007acc;
@@ -71,36 +100,85 @@
 <body>
   <header>
     <img src="profile.png" alt="Elaine Chiu">
-    <h1>Elaine Chiu</h1>
+    <h1>Elaine K. Chiu</h1>
     <p>Ph.D. Candidate in Statistics · University of Wisconsin–Madison</p>
-    <p>
-      <a href="https://github.com/elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data">
-        R Package: Exact Sensitivity Analysis for Categorical Data
-      </a>
-    </p>
+    <a class="cv-button" href="Elaine_CV_2025.pdf" target="_blank">📄 Download CV</a>
   </header>
 
   <main>
     <section>
       <h2>About</h2>
       <p>
-        My research centers on causal inference, sensitivity analysis, and hypothesis testing, 
-        with a special interest in analyzing observational studies.
+        I am a Ph.D. candidate in Statistics at the University of Wisconsin–Madison, advised by
+        Professor Hyunseung Kang. My research develops novel methodologies for
+        <strong>causal inference, sensitivity analysis, and hypothesis testing</strong>,
+        with a focus on robust inference under unmeasured confounding in observational studies.
+        My work combines statistical theory, computation, and applications in education, health, and social science.
       </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D. in Statistics</strong>, University of Wisconsin–Madison (Expected 2026)<br>
+          Advisor: Prof. Hyunseung Kang
+        </li>
+        <li><strong>M.S. in Statistics</strong>, University of Washington, Seattle (2021)</li>
+        <li><strong>B.A. in Economics</strong>, Minor in Political Science, National Taiwan University (2018)</li>
+      </ul>
     </section>
 
     <section>
       <h2>Research</h2>
       <p>
-        I develop new tools for exact, nonparametric sensitivity analysis in multi-category contingency tables. 
-        My work provides valid inference under unmeasured confounding and extends Rosenbaum’s model to general I×J tables.
+        My research addresses fundamental challenges in causal inference under hidden bias. 
+        I develop <strong>exact and nonparametric sensitivity analysis methods</strong> that extend beyond binary treatments, 
+        enabling valid inference under unmeasured confounding for categorical and continuous treatment settings. 
+        My current projects explore how robustness and efficiency can be formally characterized through design sensitivity, 
+        Bahadur–Rosenbaum efficiency, and related asymptotic measures.
       </p>
+    </section>
+
+    <section>
+      <h2>Publications & Working Papers</h2>
+
+      <h3><a href="https://arxiv.org/abs/2507.17207" target="_blank">Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables</a></h3>
+      <div class="paper-status">Submitted to <em>Journal of the American Statistical Association</em> (Theory and Methods)</div>
+      <p>
+        <em>Elaine K. Chiu</em> and Hyunseung Kang.  
+        Proposes the first exact, nonparametric sensitivity analysis for multi-category tables,
+        characterizing the worst-case confounder and introducing a fast kernel-based computation.
+      </p>
+
+      <h3>Towards Robust Matched Observational Studies with General Treatment Types</h3>
+      <p>
+        <em>Siyu Heng</em>, <em>Elaine K. Chiu</em>, and Hyunseung Kang. In preparation.  
+        Extends sensitivity analysis to matched observational studies with continuous treatments, 
+        introducing generalized design sensitivity and Bahadur–Rosenbaum efficiency.
+      </p>
+
+      <h3>Sensitivity Analysis for Matched-Pair Cluster Randomization Designs</h3>
+      <p>
+        <em>Elaine K. Chiu</em> and Hyunseung Kang. In preparation.  
+        Develops new sensitivity and efficiency measures for matched-pair cluster designs used in political science and education research.
+      </p>
+    </section>
+
+    <section>
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>NESS Student Research Award, New England Statistics Symposium (NESS), 2025</li>
+        <li>IMS Hannan Graduate Student Travel Award, Institute of Mathematical Statistics (IMS), 2025</li>
+        <li>ICSA Student Paper Award, Honorable Mention, 2025</li>
+        <li>IMPS Duolingo Travel Award, International Meeting of the Psychometric Society (IMPS), 2024</li>
+        <li>President’s Award (Top 5% GPA), National Taiwan University, 2014–2016</li>
+        <li>Future Scholars in Humanities and Social Sciences Fellowship, Ministry of Education, Taiwan, 2016</li>
+      </ul>
     </section>
 
     <section>
       <h2>Links</h2>
       <ul>
-        <li><a href="https://sites.google.com/view/elainekchiu">Google Site</a></li>
         <li><a href="https://orcid.org/0009-0007-4137-0023">ORCID</a></li>
         <li><a href="https://github.com/elainechiu">GitHub Profile</a></li>
       </ul>
@@ -108,7 +186,7 @@
   </main>
 
   <footer>
-    © 2025 Elaine Chiu · Last updated October 2025
+    © 2025 Elaine K. Chiu · Last updated October 2025
   </footer>
 </body>
 </html>
