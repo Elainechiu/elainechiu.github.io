@@ -1,10 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Software</title>
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #202124;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      border-bottom: 1px solid #dadce0;
+      margin-bottom: 40px;
+      padding: 15px 0 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #174ea6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0b3d91;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 60px auto;
+      padding: 0 20px 60px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #dadce0;
+      padding-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #dadce0;
+      padding-bottom: 4px;
+      text-transform: none; /* Keep true title capitalization */
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #b00020; /* red highlight for paper and GitHub links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #5f6368;
+      font-size: 14px;
+      margin-top: 60px;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
+
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="software.html">Software</a>
+    <a href="teaching.html">Teaching</a>
+  </nav>
+
+  <main>
+    <h1>Software</h1>
+
+    <h2>sensitivityIxJ: Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables</h2>
+    <p>
+      The R package <strong>sensitivityIxJ</strong> provides exact and nonparametric sensitivity analysis 
+      methods for multi-category contingency tables under unmeasured confounding. 
+      It generalizes classical binary-treatment sensitivity analysis frameworks 
+      to I×J categorical settings.
+    </p>
+    <p>
+      The package accompanies the paper 
+      <a href="https://arxiv.org/abs/2507.17207" target="_blank">
+        “Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables”
+      </a> 
+      by <em>Elaine K. Chiu</em> and <em>Hyunseung Kang</em>.
+    </p>
+    <p>
+      Source code and documentation are available on 
+      <a href="https://github.com/Elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data" target="_blank">
+        GitHub
+      </a>.
+    </p>
+
+    <footer>
+      © 2025 Elaine K. Chiu · Last updated October 2025
+    </footer>
+  </main>
 </body>
 </html>
