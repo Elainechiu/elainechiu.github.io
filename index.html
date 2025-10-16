@@ -15,8 +15,8 @@
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
-      background-color: #ffffff;
-      color: #222;
+      background-color: #fafafa; /* soft white */
+      color: #202124; /* neutral black */
       line-height: 1.7;
     }
 
@@ -41,7 +41,7 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 1px solid #ddd;
+      border: 1px solid #dadce0; /* soft gray border */
     }
 
     .intro-text {
@@ -57,7 +57,7 @@
 
     .subtitle {
       font-size: 16px;
-      color: #555;
+      color: #5f6368; /* muted gray */
       margin-bottom: 12px;
     }
 
@@ -67,13 +67,13 @@
     }
 
     a {
-      color: #1a0dab;
+      color: #174ea6; /* muted blue */
       text-decoration: none;
     }
 
     a:hover {
+      color: #0b3d91; /* darker blue on hover */
       text-decoration: underline;
-      color: #003399;
     }
 
     section {
@@ -84,8 +84,8 @@
       font-size: 19px;
       font-weight: 600;
       margin-bottom: 12px;
-      color: #222;
-      border-bottom: 1px solid #ddd;
+      color: #202124;
+      border-bottom: 1px solid #dadce0;
       padding-bottom: 4px;
     }
 
@@ -96,7 +96,7 @@
 
     footer {
       text-align: center;
-      color: #777;
+      color: #5f6368;
       font-size: 14px;
       margin-top: 60px;
       padding-bottom: 20px;
@@ -121,7 +121,10 @@
       <img src="profile.png" alt="Elaine K. Chiu" />
       <div class="intro-text">
         <h1>Elaine K. Chiu</h1>
-        <div class="subtitle">Ph.D. Candidate in Statistics<br>University of Wisconsin–Madison</div>
+        <div class="subtitle">
+          Ph.D. Candidate in Statistics<br>
+          University of Wisconsin–Madison
+        </div>
         <p>
           I am a Ph.D. candidate in Statistics at the University of Wisconsin–Madison, advised by
           Professor Hyunseung Kang. My research focuses on
@@ -142,9 +145,10 @@
       <h2>Research</h2>
       <p>
         My research develops new statistical frameworks for sensitivity analysis in observational
-        studies. I focus on extending exact, nonparametric methods to multi-level and
-        cluster-based designs, characterizing robustness through design sensitivity and
-        Bahadur–Rosenbaum efficiency.
+        studies. I focus on extending exact, nonparametric methods to handle multi-category discrete data 
+        and continuous data under stratified, matched-pair, or cluster-based designs. 
+        A central theme of my work is to characterize robustness through design sensitivity 
+        and Bahadur–Rosenbaum efficiency.
       </p>
     </section>
 
