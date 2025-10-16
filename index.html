@@ -40,7 +40,7 @@
       margin: 4px 0;
       color: #555;
     }
-    .cv-button {
+    .cv-button, .email-button {
       display: inline-block;
       margin-top: 10px;
       background-color: #007acc;
@@ -50,8 +50,15 @@
       text-decoration: none;
       transition: background-color 0.2s;
     }
-    .cv-button:hover {
+    .cv-button:hover, .email-button:hover {
       background-color: #005f99;
+    }
+    .email-button {
+      background-color: #009688;
+      margin-left: 8px;
+    }
+    .email-button:hover {
+      background-color: #00796b;
     }
     main {
       max-width: 850px;
@@ -109,7 +116,13 @@
     <img src="profile.png" alt="Elaine Chiu">
     <h1>Elaine K. Chiu</h1>
     <p>Ph.D. Candidate in Statistics · University of Wisconsin–Madison</p>
-    <a class="cv-button" href="Elaine_CV_2025.pdf" target="_blank">📄 Download CV</a>
+    <p>
+      <a href="https://www.linkedin.com/in/elaine-chiu-231767181/" target="_blank">LinkedIn</a>
+    </p>
+    <div>
+      <a class="cv-button" href="Elaine_CV_2025.pdf" target="_blank">📄 Download CV</a>
+      <button class="email-button" onclick="copyEmail()">📧 Copy Email</button>
+    </div>
   </header>
 
   <main>
@@ -186,6 +199,8 @@
     <section>
       <h2>Links</h2>
       <ul>
+        <li><button class="email-button" onclick="copyEmail()">📧 Copy Email (chiukuanjung@gmail.com)</button></li>
+        <li><a href="https://www.linkedin.com/in/elaine-chiu-231767181/" target="_blank">LinkedIn</a></li>
         <li><a href="https://orcid.org/0009-0007-4137-0023">ORCID</a></li>
         <li><a href="https://github.com/elainechiu">GitHub Profile</a></li>
       </ul>
@@ -195,5 +210,13 @@
   <footer>
     © 2025 Elaine K. Chiu · Last updated October 2025
   </footer>
+
+  <script>
+    function copyEmail() {
+      const email = "chiukuanjung@gmail.com";
+      navigator.clipboard.writeText(email);
+      alert("Email copied to clipboard: " + email);
+    }
+  </script>
 </body>
 </html>
