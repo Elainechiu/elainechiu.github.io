@@ -1,24 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elaine Chiu</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+    header p {
+      margin: 4px 0;
+      color: #555;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      border-bottom: 2px solid #007acc;
+      display: inline-block;
+      padding-bottom: 4px;
+      margin-bottom: 15px;
+      color: #007acc;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to my website!</h1>
-  <p>I’m <strong>Elaine Chiu</strong>, a Ph.D. candidate in Statistics at the University of Wisconsin–Madison.</p>
-  <p>My research centers on causal inference, sensitivity analysis, and hypothesis testing, 
-     with a special interest in analyzing observational studies.</p>
+  <header>
+    <img src="profile.jpg" alt="Elaine Chiu">
+    <h1>Elaine Chiu</h1>
+    <p>Ph.D. Candidate in Statistics · University of Wisconsin–Madison</p>
+    <p>
+      <a href="https://github.com/elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data">
+        R Package: Exact Sensitivity Analysis for Categorical Data
+      </a>
+    </p>
+  </header>
 
-  <p>
-     <a href="https://github.com/elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data">
-      R package: Exact Sensitivity Analysis for Categorical Data
-    </a>
-  </p>
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>
+        My research centers on causal inference, sensitivity analysis, and hypothesis testing, 
+        with a special interest in analyzing observational studies.
+      </p>
+    </section>
 
-  <p>
-     <a href="https://orcid.org/0009-0007-4137-0023">ORCID</a>
-  </p>
+    <section>
+      <h2>Research</h2>
+      <p>
+        I develop new tools for exact, nonparametric sensitivity analysis in multi-category contingency tables. 
+        My work provides valid inference under unmeasured confounding and extends Rosenbaum’s model to general I×J tables.
+      </p>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://sites.google.com/view/elainekchiu">Google Site</a></li>
+        <li><a href="https://orcid.org/0009-0007-4137-0023">ORCID</a></li>
+        <li><a href="https://github.com/elainechiu">GitHub Profile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Elaine Chiu · Last updated October 2025
+  </footer>
 </body>
 </html>
