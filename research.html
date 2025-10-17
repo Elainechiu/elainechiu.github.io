@@ -3,7 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research by Elaine Chiu (Elaine K. Chiu), Ph.D. Candidate in Statistics at the University of Wisconsin–Madison. Focused on causal inference, sensitivity analysis, and robust statistical methods." />
+  <meta name="keywords" content="Elaine Chiu, Elaine K. Chiu, Siyu Heng, Hyunseung Kang, UW–Madison, Statistics, Causal Inference, Sensitivity Analysis, Observational Studies, Nonparametric Methods" />
+  <meta name="author" content="Elaine Chiu" />
   <title>Elaine Chiu</title>
+
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": ["Elaine Chiu", "Elaine K. Chiu"],
+    "alternateName": "Elaine K. Chiu",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Wisconsin–Madison",
+      "url": "https://www.wisc.edu"
+    },
+    "worksFor": {
+      "@type": "Department",
+      "name": "Department of Statistics",
+      "url": "https://stat.wisc.edu"
+    },
+    "jobTitle": "Ph.D. Candidate in Statistics",
+    "url": "https://elainechiu.github.io/research.html",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=YOUR_ID",
+      "https://www.linkedin.com/in/elaine-chiu-231767181/",
+      "https://github.com/elainechiu",
+      "https://pages.cs.wisc.edu/~hyunseung/",
+      "https://www.hengsiyu.com"
+    ]
+  }
+  </script>
 
   <style>
     html, body {
@@ -34,7 +66,7 @@
     header h1 {
       font-size: 28px;
       margin-bottom: 5px;
-      text-transform: none; /* ensures normal capitalization */
+      text-transform: none;
     }
 
     header p {
@@ -100,12 +132,23 @@
     }
 
     a {
-      color: #b00020; /* red for paper and GitHub links */
+      color: #b00020;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* invisible clickable links */
+    a.hidden-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a.hidden-link:hover {
+      color: inherit;
+      text-decoration: none;
     }
 
     footer {
@@ -130,7 +173,11 @@
   <header>
     <img src="profile.png" alt="Elaine Chiu" />
     <h1>Elaine Chiu</h1>
-    <p>Ph.D. Candidate in Statistics · University of Wisconsin–Madison</p>
+    <p>
+      Ph.D. Candidate in Statistics · 
+      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>, 
+      <a href="https://www.wisc.edu" target="_blank" class="hidden-link">University of Wisconsin–Madison</a>
+    </p>
   </header>
 
   <nav>
@@ -146,7 +193,8 @@
     <h2>Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables</h2>
     <p>
       <a href="https://arxiv.org/abs/2507.17207" target="_blank"><strong>arXiv:2507.17207</strong></a><br>
-      <em>Elaine K. Chiu</em> and <em>Hyunseung Kang</em>.
+      <em>Elaine K. Chiu</em> and 
+      <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
     </p>
     <p>
       This paper develops the first exact, nonparametric sensitivity analysis framework 
@@ -157,7 +205,10 @@
 
     <h2>Towards Robust Matched Observational Studies with General Treatment Types</h2>
     <p>
-      <em>Siyu Heng</em>, <em>Elaine K. Chiu</em>, and <em>Hyunseung Kang</em>. In preparation.
+      <a href="https://www.hengsiyu.com" target="_blank" class="hidden-link"><em>Siyu Heng</em></a>, 
+      <em>Elaine K. Chiu</em>, and 
+      <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
+      In preparation.
     </p>
     <p>
       This project extends sensitivity analysis frameworks to matched observational studies 
@@ -167,7 +218,9 @@
 
     <h2>Sensitivity Analysis for Matched-Pair Cluster Randomization Designs</h2>
     <p>
-      <em>Elaine K. Chiu</em> and <em>Hyunseung Kang</em>. In preparation.
+      <em>Elaine K. Chiu</em> and 
+      <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
+      In preparation.
     </p>
     <p>
       This work discusses the optimal test statistics under the matched-pair cluster randomization design
