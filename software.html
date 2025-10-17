@@ -3,7 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sensitivityIxJ: an R package by Elaine Chiu (Elaine K. Chiu) and Hyunseung Kang for exact, nonparametric sensitivity analysis in multi-category contingency tables. Developed at the University of Wisconsin–Madison." />
+  <meta name="keywords" content="Elaine Chiu, Elaine K. Chiu, sensitivityIxJ, R package, UW–Madison, Statistics, Causal Inference, Sensitivity Analysis, Nonparametric Methods, Observational Studies" />
+  <meta name="author" content="Elaine Chiu" />
   <title>Software | Elaine Chiu</title>
+
+  <!-- Structured data for Google Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "sensitivityIxJ",
+    "applicationCategory": "Statistics Software",
+    "operatingSystem": "Cross-platform",
+    "creator": {
+      "@type": "Person",
+      "name": ["Elaine Chiu", "Elaine K. Chiu"],
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Wisconsin–Madison",
+        "url": "https://www.wisc.edu"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=YOUR_ID",
+        "https://www.linkedin.com/in/elaine-chiu-231767181/",
+        "https://github.com/elainechiu",
+        "https://pages.cs.wisc.edu/~hyunseung/"
+      ]
+    },
+    "url": "https://CRAN.R-project.org/package=sensitivityIxJ",
+    "codeRepository": "https://github.com/Elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data",
+    "softwareVersion": "1.0.0",
+    "license": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+  }
+  </script>
 
   <style>
     html, body {
@@ -36,7 +69,6 @@
       margin-bottom: 5px;
       text-transform: none;
     }
-
 
     header p {
       color: #555;
@@ -101,12 +133,23 @@
     }
 
     a {
-      color: #b00020; /* red for paper and GitHub links */
+      color: #b00020;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Invisible clickable links */
+    a.hidden-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a.hidden-link:hover {
+      color: inherit;
+      text-decoration: none;
     }
 
     footer {
@@ -131,7 +174,11 @@
   <header>
     <img src="profile.png" alt="Elaine Chiu" />
     <h1>Elaine Chiu</h1>
-    <p>Ph.D. Candidate in Statistics · University of Wisconsin–Madison</p>
+    <p>
+      Ph.D. Candidate in Statistics · 
+      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>, 
+      <a href="https://www.wisc.edu" target="_blank" class="hidden-link">University of Wisconsin–Madison</a>
+    </p>
   </header>
 
   <nav>
@@ -156,7 +203,8 @@
       <a href="https://arxiv.org/abs/2507.17207" target="_blank">
         “Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables”
       </a> 
-      by <em>Elaine K. Chiu</em> and <em>Hyunseung Kang</em>.
+      by <em>Elaine K. Chiu</em> and 
+      <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
     </p>
     <p>
       Available on 
