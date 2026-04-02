@@ -461,8 +461,12 @@
       const toggleBtn = document.getElementById("theme-toggle");
       const savedTheme = localStorage.getItem("theme");
 
+      const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "light" || savedTheme === "dark") {
         root.setAttribute("data-theme", savedTheme);
+      } else {
+        // DEFAULT → DARK MODE
+        root.setAttribute("data-theme", "dark");
       }
 
       toggleBtn.addEventListener("click", function () {
