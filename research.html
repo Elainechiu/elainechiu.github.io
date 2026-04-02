@@ -44,66 +44,62 @@
 
   <style>
     :root {
-      --bg: #f6f7fb;
-      --surface: #ffffff;
-      --surface-2: #fbfbfd;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --link: #2563eb;
-      --link-hover: #1d4ed8;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --nav-bg: rgba(255, 255, 255, 0.78);
+      --bg: #f7f4ef;
+      --surface: #fdfbf7;
+      --surface-2: #f3eee7;
+      --text: #2a2a2a;
+      --muted: #7a766f;
+      --border: #e6e0d8;
+      --link: #3b6ea8;
+      --link-hover: #2f5a8c;
+      --shadow: 0 8px 24px rgba(60, 50, 40, 0.08);
+      --nav-bg: rgba(253, 251, 247, 0.75);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0b1220;
-        --surface: #121a2b;
-        --surface-2: #182235;
-        --text: #e5e7eb;
-        --muted: #9aa4b2;
-        --border: #253046;
-        --link: #8ab4ff;
-        --link-hover: #b1cbff;
-        --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
-        --nav-bg: rgba(11, 18, 32, 0.72);
+        --bg: #161513;
+        --surface: #1e1c19;
+        --surface-2: #26231f;
+        --text: #e8e3dc;
+        --muted: #b0a79c;
+        --border: #3a342c;
+        --link: #9bbcf2;
+        --link-hover: #c2d6ff;
+        --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+        --nav-bg: rgba(22, 21, 19, 0.75);
       }
     }
 
     html[data-theme="light"] {
-      --bg: #f6f7fb;
-      --surface: #ffffff;
-      --surface-2: #fbfbfd;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --link: #2563eb;
-      --link-hover: #1d4ed8;
-      --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --nav-bg: rgba(255, 255, 255, 0.78);
+      --bg: #f7f4ef;
+      --surface: #fdfbf7;
+      --surface-2: #f3eee7;
+      --text: #2a2a2a;
+      --muted: #7a766f;
+      --border: #e6e0d8;
+      --link: #3b6ea8;
+      --link-hover: #2f5a8c;
+      --shadow: 0 8px 24px rgba(60, 50, 40, 0.08);
+      --nav-bg: rgba(253, 251, 247, 0.75);
     }
 
     html[data-theme="dark"] {
-      --bg: #0b1220;
-      --surface: #121a2b;
-      --surface-2: #182235;
-      --text: #e5e7eb;
-      --muted: #9aa4b2;
-      --border: #253046;
-      --link: #8ab4ff;
-      --link-hover: #b1cbff;
-      --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
-      --nav-bg: rgba(11, 18, 32, 0.72);
+      --bg: #161513;
+      --surface: #1e1c19;
+      --surface-2: #26231f;
+      --text: #e8e3dc;
+      --muted: #b0a79c;
+      --border: #3a342c;
+      --link: #9bbcf2;
+      --link-hover: #c2d6ff;
+      --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+      --nav-bg: rgba(22, 21, 19, 0.75);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -300,34 +296,13 @@
     }
 
     @media (max-width: 700px) {
-      header {
-        padding-top: 30px;
-      }
-
-      header h1 {
-        font-size: 28px;
-      }
-
-      header p {
-        font-size: 15px;
-      }
-
-      nav .nav-inner {
-        border-radius: 22px;
-        gap: 10px 16px;
-      }
-
-      .content-card {
-        padding: 24px 20px;
-      }
-
-      .page-title {
-        font-size: 24px;
-      }
-
-      .research-item h2 {
-        font-size: 18px;
-      }
+      header { padding-top: 30px; }
+      header h1 { font-size: 28px; }
+      header p { font-size: 15px; }
+      nav .nav-inner { border-radius: 22px; gap: 10px 16px; }
+      .content-card { padding: 24px 20px; }
+      .page-title { font-size: 24px; }
+      .research-item h2 { font-size: 18px; }
     }
   </style>
 </head>
@@ -336,9 +311,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand-small">Elaine K. Chiu</div>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        Toggle theme
-      </button>
+      <button class="theme-toggle" id="theme-toggle">Toggle theme</button>
     </div>
   </div>
 
@@ -346,8 +319,8 @@
     <img src="profile.png" alt="Portrait of Elaine K. Chiu" />
     <h1>Elaine K. Chiu</h1>
     <p>
-      Ph.D. in Statistics ·
-      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>,
+      Ph.D. in Statistics · 
+      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>, 
       <a href="https://www.wisc.edu" target="_blank" class="hidden-link">University of Wisconsin–Madison</a>
     </p>
   </header>
@@ -369,13 +342,13 @@
         <h2>Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables</h2>
         <p class="authors">
           <a href="https://arxiv.org/abs/2507.17207" target="_blank"><strong>arXiv:2507.17207</strong></a><br>
-          <em>Elaine K. Chiu</em> and
+          <em>Elaine K. Chiu</em> and 
           <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
         </p>
         <p class="summary">
-          This paper develops the first exact, nonparametric sensitivity analysis framework
+          This paper develops the first exact, nonparametric sensitivity analysis framework 
           for multi-category contingency tables, providing valid inference under unmeasured confounding.
-          It generalizes Rosenbaum’s generic sensitivity analysis to general I×J treatment–outcome structures,
+          It generalizes Rosenbaum’s generic sensitivity analysis to general I×J treatment–outcome structures, 
           offering both exact and asymptotic inference methods.
         </p>
       </div>
@@ -384,13 +357,13 @@
         <h2>Towards Robust Matched Observational Studies with General Treatment Types: Consistency, Efficiency, and Adaptivity</h2>
         <p class="authors">
           <a href="https://arxiv.org/abs/2403.14152" target="_blank"><strong>arXiv:2403.14152</strong></a><br>
-          <a href="https://www.hengsiyu.com" target="_blank" class="hidden-link"><em>Siyu Heng</em></a>,
-          <em>Elaine K. Chiu</em>, and
-          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
+          <a href="https://www.hengsiyu.com" target="_blank" class="hidden-link"><em>Siyu Heng</em></a>, 
+          <em>Elaine K. Chiu</em>, and 
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
         </p>
         <p class="summary">
-          This project extends sensitivity analysis frameworks to matched observational studies
-          with continuous treatments, investigating optimal test statistics through design sensitivity
+          This project extends sensitivity analysis frameworks to matched observational studies 
+          with continuous treatments, investigating optimal test statistics through design sensitivity 
           and Bahadur relative efficiency.
         </p>
       </div>
@@ -398,12 +371,12 @@
       <div class="research-item">
         <h2>Sensitivity Analysis for Matched-Pair Cluster Randomization Designs</h2>
         <p class="authors">
-          <em>Elaine K. Chiu</em> and
-          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
+          <em>Elaine K. Chiu</em> and 
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
           In preparation.
         </p>
         <p class="summary">
-          This work investigates optimal test statistics under matched-pair cluster randomization
+          This work investigates optimal test statistics under matched-pair cluster randomization 
           designs and derives sensitivity values and Bahadur relative efficiencies.
         </p>
       </div>
