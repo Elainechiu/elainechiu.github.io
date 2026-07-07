@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elaine K. Chiu | Research</title>
-
   <meta name="description" content="Research by Elaine K. Chiu (also known as Elaine Chiu), Ph.D. in Statistics at the University of Wisconsin–Madison. Focused on causal inference, sensitivity analysis, and robust statistical methods." />
   <meta name="keywords" content="Elaine K. Chiu, Elaine Chiu, Hyunseung Kang, Siyu Heng, UW–Madison, Statistics, Causal Inference, Sensitivity Analysis, Observational Studies, Nonparametric Methods" />
   <meta name="author" content="Elaine K. Chiu" />
   <link rel="canonical" href="https://elainechiu.github.io/research.html" />
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +39,6 @@
     "description": "Research by Elaine K. Chiu (Elaine Chiu), Ph.D. candidate in Statistics at the University of Wisconsin–Madison specializing in causal inference, sensitivity analysis, and robust statistical computing."
   }
   </script>
-
   <style>
     :root {
       --bg: #f7f4ef;
@@ -55,7 +52,6 @@
       --shadow: 0 8px 24px rgba(60, 50, 40, 0.08);
       --nav-bg: rgba(253, 251, 247, 0.75);
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #161513;
@@ -70,7 +66,6 @@
         --nav-bg: rgba(22, 21, 19, 0.75);
       }
     }
-
     html[data-theme="light"] {
       --bg: #f7f4ef;
       --surface: #fdfbf7;
@@ -83,7 +78,6 @@
       --shadow: 0 8px 24px rgba(60, 50, 40, 0.08);
       --nav-bg: rgba(253, 251, 247, 0.75);
     }
-
     html[data-theme="dark"] {
       --bg: #161513;
       --surface: #1e1c19;
@@ -96,20 +90,16 @@
       --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
       --nav-bg: rgba(22, 21, 19, 0.75);
     }
-
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(to bottom, var(--bg), var(--bg));
+      background: var(--bg);
       color: var(--text);
       line-height: 1.75;
       transition: background-color 0.25s ease, color 0.25s ease;
     }
-
     .topbar {
       position: sticky;
       top: 0;
@@ -119,7 +109,6 @@
       background: var(--nav-bg);
       border-bottom: 1px solid var(--border);
     }
-
     .topbar-inner {
       max-width: 980px;
       margin: 0 auto;
@@ -129,14 +118,12 @@
       align-items: center;
       gap: 12px;
     }
-
     .brand-small {
       font-size: 14px;
       color: var(--muted);
       font-weight: 600;
       letter-spacing: 0.01em;
     }
-
     .theme-toggle {
       border: 1px solid var(--border);
       background: var(--surface);
@@ -149,17 +136,14 @@
       transition: all 0.2s ease;
       box-shadow: var(--shadow);
     }
-
     .theme-toggle:hover {
       border-color: var(--link);
       color: var(--link);
     }
-
     header {
       text-align: center;
       padding: 44px 20px 18px;
     }
-
     header img {
       width: 150px;
       height: 150px;
@@ -169,26 +153,22 @@
       border: 1px solid var(--border);
       background: var(--surface-2);
     }
-
     header h1 {
       font-size: 34px;
       margin: 0 0 8px 0;
       font-weight: 700;
       letter-spacing: -0.03em;
     }
-
     header p {
       font-size: 17px;
       color: var(--muted);
       margin: 0;
     }
-
     nav {
       text-align: center;
       margin: 0 auto 36px;
       padding: 0 20px;
     }
-
     nav .nav-inner {
       max-width: 920px;
       margin: 0 auto;
@@ -202,24 +182,28 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-
     nav a {
       color: var(--link);
       text-decoration: none;
       font-weight: 500;
     }
-
     nav a:hover {
       color: var(--link-hover);
       text-decoration: underline;
     }
-
+    nav a.active {
+      color: var(--text);
+      font-weight: 650;
+      cursor: default;
+    }
+    nav a.active:hover {
+      text-decoration: none;
+    }
     main {
       max-width: 920px;
       margin: 0 auto;
       padding: 0 20px 70px;
     }
-
     .content-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -227,7 +211,6 @@
       box-shadow: var(--shadow);
       padding: 32px 34px;
     }
-
     .page-title {
       text-align: center;
       font-size: 28px;
@@ -237,12 +220,11 @@
       padding-bottom: 12px;
       border-bottom: 1px solid var(--border);
     }
-
     .research-item + .research-item {
-      margin-top: 30px;
-      padding-top: 6px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
     }
-
     .research-item h2 {
       font-size: 20px;
       font-weight: 650;
@@ -250,51 +232,43 @@
       color: var(--text);
       line-height: 1.4;
     }
-
     .authors {
       margin: 0 0 12px 0;
     }
-
     .summary {
       margin: 0;
       color: var(--text);
     }
-
     p {
       margin-top: 0.65em;
       margin-bottom: 0.65em;
     }
-
     a {
       color: var(--link);
       text-decoration: none;
       transition: color 0.15s ease;
     }
-
     a:hover {
       color: var(--link-hover);
       text-decoration: underline;
     }
-
     a.hidden-link {
       color: inherit;
       text-decoration: none;
       cursor: pointer;
     }
-
     a.hidden-link:hover {
       color: inherit;
       text-decoration: none;
     }
-
     footer {
       text-align: center;
       color: var(--muted);
       font-size: 14px;
       margin-top: 34px;
-      padding-top: 4px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
     }
-
     @media (max-width: 700px) {
       header { padding-top: 30px; }
       header h1 { font-size: 28px; }
@@ -306,12 +280,11 @@
     }
   </style>
 </head>
-
 <body>
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand-small">Elaine K. Chiu</div>
-      <button class="theme-toggle" id="theme-toggle">Toggle theme</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
     </div>
   </div>
 
@@ -319,8 +292,8 @@
     <img src="profile.png" alt="Portrait of Elaine K. Chiu" />
     <h1>Elaine K. Chiu</h1>
     <p>
-      Ph.D. in Statistics · 
-      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>, 
+      Ph.D. in Statistics ·
+      <a href="https://stat.wisc.edu" target="_blank" class="hidden-link">Department of Statistics</a>,
       <a href="https://www.wisc.edu" target="_blank" class="hidden-link">University of Wisconsin–Madison</a>
     </p>
   </header>
@@ -328,7 +301,7 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
+      <a href="research.html" class="active">Research</a>
       <a href="software.html">Software</a>
       <a href="presentations.html">Presentations</a>
     </div>
@@ -342,14 +315,14 @@
         <h2>Exact, Nonparametric Sensitivity Analysis for Observational Studies of Contingency Tables</h2>
         <p class="authors">
           <a href="https://arxiv.org/abs/2507.17207" target="_blank"><strong>arXiv:2507.17207</strong></a><br>
-          <em>Elaine K. Chiu</em> and 
+          <em>Elaine K. Chiu</em> and
           <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
         </p>
         <p class="summary">
-          This paper develops the first exact, nonparametric sensitivity analysis framework 
-          for multi-category contingency tables, providing valid inference under unmeasured confounding.
-          It generalizes Rosenbaum’s generic sensitivity analysis to general I×J treatment–outcome structures, 
-          offering both exact and asymptotic inference methods.
+          This paper develops the first exact, nonparametric sensitivity analysis framework for
+          multi-category contingency tables, providing valid inference under unmeasured confounding.
+          It generalizes Rosenbaum&rsquo;s sensitivity analysis to general I&times;J treatment&ndash;outcome
+          structures, with both exact and large-sample methods.
         </p>
       </div>
 
@@ -357,32 +330,48 @@
         <h2>Towards Robust Matched Observational Studies with General Treatment Types: Consistency, Efficiency, and Adaptivity</h2>
         <p class="authors">
           <a href="https://arxiv.org/abs/2403.14152" target="_blank"><strong>arXiv:2403.14152</strong></a><br>
-          <a href="https://www.hengsiyu.com" target="_blank" class="hidden-link"><em>Siyu Heng</em></a>, 
-          <em>Elaine K. Chiu</em>, and 
-          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
+          <a href="https://www.hengsiyu.com" target="_blank" class="hidden-link"><em>Siyu Heng</em></a>,
+          <em>Elaine K. Chiu</em>, and
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
         </p>
         <p class="summary">
-          This project extends sensitivity analysis frameworks to matched observational studies 
-          with continuous treatments, investigating optimal test statistics through design sensitivity 
-          and Bahadur relative efficiency.
+          This project extends sensitivity analysis to matched observational studies with general
+          treatment types, investigating optimal test statistics through design sensitivity and
+          Bahadur relative efficiency.
         </p>
       </div>
 
       <div class="research-item">
         <h2>Sensitivity Analysis for Matched-Pair Cluster Randomization Designs</h2>
         <p class="authors">
-          <em>Elaine K. Chiu</em> and 
-          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>. 
+          <em>Elaine K. Chiu</em> and
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
           In preparation.
         </p>
         <p class="summary">
-          This work investigates optimal test statistics under matched-pair cluster randomization 
-          designs and derives sensitivity values and Bahadur relative efficiencies.
+          This work develops a class of cluster-level rank tests &mdash; mean, sum, and size-weighted &mdash;
+          for matched-pair cluster randomization designs, and derives their design sensitivity under lighter
+          assumptions than existing work: unequal cluster sizes and independence rather than i.i.d. clusters.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <h2>Sample Size Calculation in Causal Inference for Unmeasured Confounding</h2>
+        <p class="authors">
+          <em>Elaine K. Chiu</em> and
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
+          In preparation.
+        </p>
+        <p class="summary">
+          This work derives the closed-form number of matched pairs required to remain insensitive to
+          unmeasured confounding up to a prespecified bias level, establishes a central limit theorem for
+          the sensitivity value &Gamma;*, and introduces a finite-sample correction so a study can be
+          designed to control both Type I and Type II error under hidden bias.
         </p>
       </div>
 
       <footer>
-        © 2025 Elaine K. Chiu · Last updated October 2025
+        © 2026 Elaine K. Chiu · Last updated July 2026
       </footer>
     </div>
   </main>
@@ -392,14 +381,11 @@
       const root = document.documentElement;
       const toggleBtn = document.getElementById("theme-toggle");
       const savedTheme = localStorage.getItem("theme");
-
       if (savedTheme === "light" || savedTheme === "dark") {
         root.setAttribute("data-theme", savedTheme);
       }
-
       toggleBtn.addEventListener("click", function () {
         const current = root.getAttribute("data-theme");
-
         if (current === "dark") {
           root.setAttribute("data-theme", "light");
           localStorage.setItem("theme", "light");
