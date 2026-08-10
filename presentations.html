@@ -4,23 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Presentations | Elaine K. Chiu</title>
+  <title>Contact | Elaine K. Chiu</title>
 
-  <link rel="canonical" href="https://elainechiu.github.io/presentations.html" />
+  <link rel="canonical" href="https://elainechiu.github.io/contact.html" />
 
-  <meta name="description" content="Talks and presentations by Elaine K. Chiu (Elaine Chiu) — Ph.D. in Statistics from the University of Wisconsin–Madison. Research on causal inference and sensitivity analysis for unmeasured confounding." />
-  <meta name="keywords" content="Elaine K. Chiu, Elaine Chiu, Presentations, Talks, Slides, Statistics, UW–Madison, Causal Inference, Sensitivity Analysis" />
+  <meta name="description" content="Contact Elaine K. Chiu (Elaine Chiu), Ph.D. in Statistics from the University of Wisconsin–Madison — email, LinkedIn, GitHub, Google Scholar, and ORCID." />
   <meta name="author" content="Elaine K. Chiu" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Presentations | Elaine K. Chiu" />
-  <meta property="og:description" content="Talks and presentations by Elaine K. Chiu on causal inference and sensitivity analysis." />
-  <meta property="og:url" content="https://elainechiu.github.io/presentations.html" />
+  <meta property="og:title" content="Contact | Elaine K. Chiu" />
+  <meta property="og:description" content="Get in touch with Elaine K. Chiu — email and academic profiles." />
+  <meta property="og:url" content="https://elainechiu.github.io/contact.html" />
   <meta property="og:image" content="https://elainechiu.github.io/profile.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Presentations | Elaine K. Chiu" />
-  <meta name="twitter:description" content="Talks and presentations by Elaine K. Chiu on causal inference and sensitivity analysis." />
+  <meta name="twitter:title" content="Contact | Elaine K. Chiu" />
+  <meta name="twitter:description" content="Get in touch with Elaine K. Chiu — email and academic profiles." />
   <meta name="twitter:image" content="https://elainechiu.github.io/profile.png" />
 
   <style>
@@ -189,14 +188,9 @@
       text-decoration: underline;
     }
 
-    nav a.active {
+    nav a[aria-current="page"] {
       color: var(--text);
       font-weight: 650;
-      cursor: default;
-    }
-
-    nav a.active:hover {
-      text-decoration: none;
     }
 
     main {
@@ -221,7 +215,7 @@
     h2 {
       font-size: 20px;
       font-weight: 650;
-      margin: 0 0 18px 0;
+      margin: 0 0 14px 0;
       color: var(--text);
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
@@ -244,89 +238,36 @@
       text-decoration: underline;
     }
 
-    /* --- Presentation list --- */
-    .talk {
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-list li {
       display: flex;
-      gap: 18px;
-      padding: 18px 0;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      padding: 12px 0;
       border-bottom: 1px solid var(--border);
     }
 
-    .talk:last-child {
+    .contact-list li:last-child {
       border-bottom: none;
-      padding-bottom: 2px;
+      padding-bottom: 0;
     }
 
-    .talk:first-of-type {
-      padding-top: 2px;
-    }
-
-    .talk-date {
-      flex: 0 0 100px;
-      font-size: 13px;
-      font-weight: 600;
+    .contact-label {
+      flex: 0 0 150px;
       color: var(--muted);
-      padding-top: 2px;
-      letter-spacing: 0.01em;
+      font-weight: 600;
+      font-size: 15px;
     }
 
-    .talk-body {
-      flex: 1 1 auto;
+    .contact-value {
+      flex: 1 1 240px;
       min-width: 0;
-    }
-
-    .talk-title {
-      font-size: 16px;
-      font-weight: 600;
-      margin: 0 0 4px 0;
-      color: var(--text);
-      line-height: 1.4;
-    }
-
-    .talk-subtitle {
-      font-size: 14px;
-      font-style: italic;
-      color: var(--muted);
-      margin: 0 0 6px 0;
-      line-height: 1.4;
-    }
-
-    .talk-venue {
-      font-size: 14px;
-      color: var(--muted);
-      margin: 0 0 8px 0;
-    }
-
-    .talk-note {
-      font-size: 14px;
-      color: var(--muted);
-      margin: 0 0 10px 0;
-      line-height: 1.55;
-    }
-
-    .talk-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .talk-links a {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 3px 12px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: var(--surface-2);
-      color: var(--link);
-      text-decoration: none;
-      transition: all 0.15s ease;
-    }
-
-    .talk-links a:hover {
-      border-color: var(--link);
-      color: var(--link-hover);
-      text-decoration: none;
+      word-break: break-word;
     }
 
     footer {
@@ -369,14 +310,8 @@
         gap: 10px 16px;
       }
 
-      .talk {
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      .talk-date {
-        flex-basis: auto;
-        padding-top: 0;
+      .contact-label {
+        flex: 1 1 100%;
       }
     }
   </style>
@@ -393,8 +328,8 @@
   </div>
 
   <header>
-    <h1>Presentations</h1>
-    <div class="subtitle">Talks, invited seminars, and posters</div>
+    <h1>Contact</h1>
+    <div class="subtitle">Elaine K. Chiu · Ph.D. in Statistics, University of Wisconsin–Madison</div>
   </header>
 
   <nav>
@@ -402,47 +337,61 @@
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="software.html">Software</a>
-      <a href="presentations.html" class="active" aria-current="page">Presentations</a>
-      <a href="contact.html">Contact</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </div>
   </nav>
 
   <main>
     <section>
-      <h2>Talks</h2>
+      <h2>Get in touch</h2>
+      <p>
+        Email is the best way to reach me. I welcome questions about my papers and software, as well as
+        inquiries about collaboration, seminar invitations, and speaking.
+      </p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <span class="contact-value"><a href="mailto:chiukuanjung@gmail.com">chiukuanjung@gmail.com</a></span>
+        </li>
+        <li>
+          <span class="contact-label">Ph.D.</span>
+          <span class="contact-value">
+            <a href="https://stat.wisc.edu" target="_blank">Department of Statistics</a>,
+            <a href="https://www.wisc.edu" target="_blank">University of Wisconsin–Madison</a>, 2026
+          </span>
+        </li>
+        <li>
+          <span class="contact-label">Curriculum Vitae</span>
+          <span class="contact-value"><a href="Elaine_Chiu_CV.pdf" target="_blank">Download CV (PDF)</a></span>
+        </li>
+      </ul>
+    </section>
 
-      <div class="talk">
-        <div class="talk-date">Jul 27, 2026</div>
-        <div class="talk-body">
-          <p class="talk-title">Valid and Powerful Hypothesis Testing in Observational Studies</p>
-          <p class="talk-subtitle">Sensitivity analysis for unmeasured confounding</p>
-          <p class="talk-venue">Ph.D. Dissertation Defense · Department of Statistics, University of Wisconsin–Madison</p>
-          <p class="talk-note">
-            Covers validity, power, and sample size calculation in observational studies,
-            along with answers to some frequently asked questions.
-          </p>
-          <div class="talk-links">
-            <a href="Elaine_Defense_Slides_20260727.pdf" target="_blank">Slides (PDF)</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="talk">
-        <div class="talk-date">Mar 18, 2026</div>
-        <div class="talk-body">
-          <p class="talk-title">Sensitivity Analysis for Unmeasured Confounding and Powerful Test Identification</p>
-          <p class="talk-subtitle">How can we draw credible causal conclusions from observational data?</p>
-          <p class="talk-venue">Online</p>
-          <div class="talk-links">
-            <a href="Sensitivity_Analysis_03182026_slides.pdf" target="_blank">Slides (PDF)</a>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2>Elsewhere</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Google Scholar</span>
+          <span class="contact-value"><a href="https://scholar.google.com/citations?user=duN6UAYAAAAJ" target="_blank">Publication profile</a></span>
+        </li>
+        <li>
+          <span class="contact-label">ORCID</span>
+          <span class="contact-value"><a href="https://orcid.org/0009-0007-4137-0023" target="_blank">0009-0007-4137-0023</a></span>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value"><a href="https://github.com/elainechiu" target="_blank">github.com/elainechiu</a></span>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value"><a href="https://www.linkedin.com/in/elaine-chiu-231767181/" target="_blank">Elaine Chiu</a></span>
+        </li>
+      </ul>
     </section>
 
     <footer>
-      © 2026 Elaine K. Chiu ·
-      <a href="index.html" class="footer-link">Home</a> ·
+      © 2026 Elaine K. Chiu · Last updated August 2026 ·
       <a href="sitemap.html" class="footer-link">Sitemap</a>
     </footer>
   </main>
