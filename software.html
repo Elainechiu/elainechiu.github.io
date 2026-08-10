@@ -27,15 +27,11 @@
       "name": "Elaine K. Chiu",
       "alternateName": "Elaine Chiu",
       "email": "mailto:chiukuanjung@gmail.com",
-      "affiliation": {
+      "jobTitle": "Statistician",
+      "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "University of Wisconsin–Madison",
         "url": "https://www.wisc.edu"
-      },
-      "worksFor": {
-        "@type": "Department",
-        "name": "Department of Statistics",
-        "url": "https://stat.wisc.edu"
       },
       "sameAs": [
         "https://scholar.google.com/citations?user=duN6UAYAAAAJ",
@@ -229,6 +225,16 @@
       text-decoration: underline;
     }
 
+    nav a.active {
+      color: var(--text);
+      font-weight: 650;
+      cursor: default;
+    }
+
+    nav a.active:hover {
+      text-decoration: none;
+    }
+
     main {
       max-width: 920px;
       margin: 0 auto;
@@ -326,7 +332,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand-small">Elaine K. Chiu</div>
-      <button class="theme-toggle" id="theme-toggle">Toggle theme</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
     </div>
   </div>
 
@@ -344,8 +350,9 @@
     <div class="nav-inner">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
-      <a href="software.html">Software</a>
+      <a href="software.html" class="active" aria-current="page">Software</a>
       <a href="presentations.html">Presentations</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
@@ -367,7 +374,7 @@
           observational studies with general I×J treatment–outcome structures under unmeasured confounding.
         </p>
         <p class="software-summary">
-          The package is developed at the
+          The package was developed at the
           <a href="https://www.wisc.edu" target="_blank" class="hidden-link">University of Wisconsin–Madison</a>
           and is designed for cross-platform use.
         </p>
@@ -379,7 +386,7 @@
       </div>
 
       <footer>
-        © 2025 Elaine K. Chiu · Last updated October 2025
+        © 2026 Elaine K. Chiu · Last updated August 2026
       </footer>
     </div>
   </main>
