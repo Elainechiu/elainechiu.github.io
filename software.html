@@ -5,51 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elaine K. Chiu | Software</title>
 
-  <meta name="description" content="sensitivityIxJ: an R package by Elaine K. Chiu (also known as Elaine Chiu) and Hyunseung Kang for exact, nonparametric sensitivity analysis in multi-category contingency tables. Developed at the University of Wisconsin–Madison." />
-  <meta name="keywords" content="Elaine K. Chiu, Elaine Chiu, sensitivityIxJ, R package, UW–Madison, Statistics, Causal Inference, Sensitivity Analysis, Nonparametric Methods, Observational Studies" />
+  <meta name="description" content="Software and replication code by Elaine K. Chiu (also known as Elaine Chiu): sensitivityIxJ, an R package for exact, nonparametric sensitivity analysis in multi-category contingency tables, and replication code for matched observational studies with general treatment types. Developed at the University of Wisconsin–Madison." />
+  <meta name="keywords" content="Elaine K. Chiu, Elaine Chiu, sensitivityIxJ, R package, replication code, UW–Madison, Statistics, Causal Inference, Sensitivity Analysis, Design Sensitivity, Nonparametric Methods, Observational Studies" />
   <meta name="author" content="Elaine K. Chiu" />
   <link rel="canonical" href="https://elainechiu.github.io/software.html" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "sensitivityIxJ",
-    "alternateName": "sensitivityIxJ: Exact, Nonparametric Sensitivity Analysis for I×J Tables",
-    "applicationCategory": "Statistics Software",
-    "operatingSystem": "Cross-platform",
-    "url": "https://CRAN.R-project.org/package=sensitivityIxJ",
-    "codeRepository": "https://github.com/Elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data",
-    "softwareVersion": "1.0.0",
-    "license": "https://www.gnu.org/licenses/gpl-3.0.en.html",
-    "creator": {
-      "@type": "Person",
-      "name": "Elaine K. Chiu",
-      "alternateName": "Elaine Chiu",
-      "email": "mailto:chiukuanjung@gmail.com",
-      "jobTitle": "Statistician",
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Wisconsin–Madison",
-        "url": "https://www.wisc.edu"
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "sensitivityIxJ",
+        "alternateName": "sensitivityIxJ: Exact, Nonparametric Sensitivity Analysis for I×J Tables",
+        "applicationCategory": "Statistics Software",
+        "operatingSystem": "Cross-platform",
+        "url": "https://CRAN.R-project.org/package=sensitivityIxJ",
+        "codeRepository": "https://github.com/Elainechiu/Exact-Sensitivity-Analysis-for-Categorical-Data",
+        "softwareVersion": "1.0.0",
+        "license": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+        "creator": {
+          "@type": "Person",
+          "name": "Elaine K. Chiu",
+          "alternateName": "Elaine Chiu",
+          "email": "mailto:chiukuanjung@gmail.com",
+          "jobTitle": "Statistician",
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Wisconsin–Madison",
+            "url": "https://www.wisc.edu"
+          },
+          "sameAs": [
+            "https://scholar.google.com/citations?user=duN6UAYAAAAJ",
+            "https://orcid.org/0009-0007-4137-0023",
+            "https://www.linkedin.com/in/elaine-chiu-231767181/",
+            "https://github.com/elainechiu",
+            "https://pages.cs.wisc.edu/~hyunseung/"
+          ]
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Hyunseung Kang",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Wisconsin–Madison",
+            "url": "https://stat.wisc.edu"
+          }
+        }
       },
-      "sameAs": [
-        "https://scholar.google.com/citations?user=duN6UAYAAAAJ",
-        "https://orcid.org/0009-0007-4137-0023",
-        "https://www.linkedin.com/in/elaine-chiu-231767181/",
-        "https://github.com/elainechiu",
-        "https://pages.cs.wisc.edu/~hyunseung/"
-      ]
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Hyunseung Kang",
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Wisconsin–Madison",
-        "url": "https://stat.wisc.edu"
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "robust-matched-general-treatments",
+        "description": "Replication code for \"Towards Robust Matched Observational Studies with General Treatment Types: Consistency, Efficiency, and Adaptivity\" — sensitivity analysis, design sensitivity, and adaptive testing for matched pairs with continuous doses.",
+        "programmingLanguage": "R",
+        "codeRepository": "https://github.com/Elainechiu/robust-matched-general-treatments",
+        "author": [
+          { "@type": "Person", "name": "Siyu Heng" },
+          { "@type": "Person", "name": "Elaine K. Chiu", "alternateName": "Elaine Chiu" },
+          { "@type": "Person", "name": "Hyunseung Kang" }
+        ]
       }
-    }
+    ]
   }
   </script>
 
@@ -251,7 +267,8 @@
 
     .software-item + .software-item {
       margin-top: 30px;
-      padding-top: 6px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
     }
 
     .software-item h2 {
@@ -269,6 +286,15 @@
     .software-summary {
       margin: 0;
       color: var(--text);
+    }
+
+    .software-summary code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1px 5px;
     }
 
     p {
@@ -371,6 +397,25 @@
           Version: 1.0.0<br>
           License:
           <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL-3</a>
+        </p>
+      </div>
+
+      <div class="software-item">
+        <h2>Replication code for "Towards Robust Matched Observational Studies with General Treatment Types: Consistency, Efficiency, and Adaptivity"</h2>
+        <p class="software-links">
+          <a href="https://github.com/Elainechiu/robust-matched-general-treatments" target="_blank"><strong>GitHub Repository</strong></a><br>
+          <em>Siyu Heng</em>, <em>Elaine K. Chiu</em>, and
+          <a href="https://pages.cs.wisc.edu/~hyunseung/" target="_blank" class="hidden-link"><em>Hyunseung Kang</em></a>.
+        </p>
+        <p class="software-summary">
+          R code and data reproducing all simulations and the data analysis in the paper, covering sensitivity
+          analysis, generalized design sensitivity, Bahadur efficiency, and adaptive testing for matched pairs
+          with continuous treatment doses.
+        </p>
+        <p class="software-summary">
+          The repository contains <code>matched_sensitivity_analysis_functions.R</code> with the core routines,
+          together with the <code>simulations/</code> and <code>data_analysis/</code> directories reproducing the
+          numerical results and the applied example.
         </p>
       </div>
 
