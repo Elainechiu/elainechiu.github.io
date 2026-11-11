@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Outreach | Elaine K. Chiu</title>
+
+  <link rel="canonical" href="https://elainechiu.github.io/outreach.html" />
+
+  <meta name="description" content="Outreach by Elaine K. Chiu (Elaine Chiu): service and information sharing for students and early-career statisticians, including slides on job hunting strategy." />
+  <meta name="keywords" content="Elaine K. Chiu, Elaine Chiu, Outreach, Service, Information Sharing, Job Hunting, Statistician, Career, Slides" />
+  <meta name="author" content="Elaine K. Chiu" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Outreach | Elaine K. Chiu" />
+  <meta property="og:description" content="Service and information sharing for students and early-career statisticians." />
+  <meta property="og:url" content="https://elainechiu.github.io/outreach.html" />
+  <meta property="og:image" content="https://elainechiu.github.io/profile.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Outreach | Elaine K. Chiu" />
+  <meta name="twitter:description" content="Service and information sharing for students and early-career statisticians." />
+  <meta name="twitter:image" content="https://elainechiu.github.io/profile.png" />
+
+  <style>
+    :root {
+      --bg: #d4d9df;
+      --surface: #fdfdfe;
+      --surface-2: #e7ebf0;
+      --text: #0a0d12;
+      --muted: #485260;
+      --border: #b6c0cd;
+      --link: #16447c;
+      --link-hover: #0d2f58;
+      --shadow: 0 12px 32px rgba(8, 16, 32, 0.16);
+      --nav-bg: rgba(253, 253, 254, 0.85);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161513;
+        --surface: #1e1c19;
+        --surface-2: #26231f;
+        --text: #e8e3dc;
+        --muted: #b0a79c;
+        --border: #3a342c;
+        --link: #9bbcf2;
+        --link-hover: #c2d6ff;
+        --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+        --nav-bg: rgba(22, 21, 19, 0.75);
+      }
+    }
+
+    html[data-theme="light"] {
+      --bg: #d4d9df;
+      --surface: #fdfdfe;
+      --surface-2: #e7ebf0;
+      --text: #0a0d12;
+      --muted: #485260;
+      --border: #b6c0cd;
+      --link: #16447c;
+      --link-hover: #0d2f58;
+      --shadow: 0 12px 32px rgba(8, 16, 32, 0.16);
+      --nav-bg: rgba(253, 253, 254, 0.85);
+    }
+
+    html[data-theme="dark"] {
+      --bg: #161513;
+      --surface: #1e1c19;
+      --surface-2: #26231f;
+      --text: #e8e3dc;
+      --muted: #b0a79c;
+      --border: #3a342c;
+      --link: #9bbcf2;
+      --link-hover: #c2d6ff;
+      --shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+      --nav-bg: rgba(22, 21, 19, 0.75);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, var(--bg), #c9d0d8);
+      color: var(--text);
+      line-height: 1.75;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-small {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .theme-toggle {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--link);
+      color: var(--link);
+    }
+
+    header {
+      text-align: center;
+      padding: 44px 20px 18px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 0 0 8px 0;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 0 auto 36px;
+      padding: 0 20px;
+    }
+
+    nav .nav-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      display: inline-flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      color: var(--text);
+      font-weight: 650;
+      cursor: default;
+    }
+
+    nav a.active:hover {
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 20px 70px;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      margin-top: 22px;
+      padding: 28px 30px;
+    }
+
+    section:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 650;
+      margin: 0 0 18px 0;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-top: 0.65em;
+      margin-bottom: 0.65em;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .section-intro {
+      font-size: 15px;
+      color: var(--muted);
+      margin: -6px 0 14px 0;
+      line-height: 1.6;
+    }
+
+    /* --- Item list (same layout as the talks on the Presentations page) --- */
+    .talk {
+      display: flex;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .talk:last-child {
+      border-bottom: none;
+      padding-bottom: 2px;
+    }
+
+    .talk:first-of-type {
+      padding-top: 2px;
+    }
+
+    .talk-date {
+      flex: 0 0 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      padding-top: 2px;
+      letter-spacing: 0.01em;
+    }
+
+    .talk-body {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .talk-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 4px 0;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .talk-subtitle {
+      font-size: 14px;
+      font-style: italic;
+      color: var(--muted);
+      margin: 0 0 6px 0;
+      line-height: 1.4;
+    }
+
+    .talk-venue {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 8px 0;
+    }
+
+    .talk-note {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 10px 0;
+      line-height: 1.55;
+    }
+
+    .talk-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .talk-links a {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 3px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--link);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .talk-links a:hover {
+      border-color: var(--link);
+      color: var(--link-hover);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 34px;
+      padding-bottom: 22px;
+    }
+
+    .footer-link {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding-top: 30px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+
+      nav .nav-inner {
+        border-radius: 22px;
+        gap: 10px 16px;
+      }
+
+      .talk {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .talk-date {
+        flex-basis: auto;
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-small">Elaine K. Chiu</div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        Toggle theme
+      </button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Outreach</h1>
+    <div class="subtitle">Service and information sharing</div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="software.html">Software</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="outreach.html" class="active" aria-current="page">Outreach</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Information Sharing</h2>
+      <p class="section-intro">
+        Slides and notes I share with students and early-career statisticians.
+      </p>
+
+      <div class="talk">
+        <div class="talk-date">Nov 2026</div>
+        <div class="talk-body">
+          <p class="talk-title">Statistician Job Hunting Strategy</p>
+          <p class="talk-subtitle">CV, LinkedIn, interviews, and the job talk</p>
+          <p class="talk-note">
+            Practical advice for Ph.D. students preparing for statistician roles: writing a CV,
+            preparing LinkedIn, short interviews and self-introductions, giving a job talk,
+            finding internships, and comparing offers.
+          </p>
+          <div class="talk-links">
+            <a href="Statistician_Job_Hunting_Strategy.pdf" target="_blank" rel="noopener">Slides (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        To add another item, copy the block below inside this section:
+
+      <div class="talk">
+        <div class="talk-date">Mon YYYY</div>
+        <div class="talk-body">
+          <p class="talk-title">Title</p>
+          <p class="talk-subtitle">One-line subtitle</p>
+          <p class="talk-note">Short description.</p>
+          <div class="talk-links">
+            <a href="File_Name.pdf" target="_blank" rel="noopener">Slides (PDF)</a>
+          </div>
+        </div>
+      </div>
+      -->
+    </section>
+
+    <!--
+      Service section: uncomment when you have an item to list.
+
+    <section>
+      <h2>Service</h2>
+      <p class="section-intro">
+        Reviewing, mentoring, and community service.
+      </p>
+
+      <div class="talk">
+        <div class="talk-date">Mon YYYY</div>
+        <div class="talk-body">
+          <p class="talk-title">Title</p>
+          <p class="talk-venue">Organization</p>
+          <p class="talk-note">Short description.</p>
+          <div class="talk-links">
+            <a href="File_Name.pdf" target="_blank" rel="noopener">Slides (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <footer>
+      © 2026 Elaine K. Chiu ·
+      <a href="index.html" class="footer-link">Home</a> ·
+      <a href="sitemap.html" class="footer-link">Sitemap</a>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById("theme-toggle");
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (e) {}
+
+      if (savedTheme === "light" || savedTheme === "dark") {
+        root.setAttribute("data-theme", savedTheme);
+      }
+
+      toggleBtn.addEventListener("click", function () {
+        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("theme", next);
+        } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
